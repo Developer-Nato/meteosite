@@ -230,23 +230,6 @@ textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(125,180,255,
 @media(prefers-reduced-motion:reduce){.reveal{transition:none;opacity:1;transform:none;filter:none}html{scroll-behavior:auto}}
 </style>
 </head>
- <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
- <script>
-const firebaseConfig = {
-  apiKey: "AIzaSyBYIkmv7TG77TK8F1MhEeRNeNFVDeAcXdY",
-  authDomain: "meteostorm-d4b69.firebaseapp.com",
-  databaseURL: "https://meteostorm-d4b69-default-rtdb.firebaseio.com",
-  projectId: "meteostorm-d4b69",
-  storageBucket: "meteostorm-d4b69.firebasestorage.app",
-  messagingSenderId: "843529550524",
-  appId: "1:843529550524:web:46bc91dda27a3f9fcdeeb9"
-};
-
-firebase.initializeApp(firebaseConfig);
-const auth = firebase.auth();
-const database = firebase.database();
 <body>
 <!-- Vertical-only blur used for scroll motion blur -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs><filter id="mblur" x="-5%" y="-20%" width="110%" height="140%"><feGaussianBlur id="mblurNode" in="SourceGraphic" stdDeviation="0 0"/></filter></defs></svg>
@@ -912,4 +895,21 @@ $('memAdd').onclick=()=>{
 applyAll();loadWeather();setInterval(loadWeather,15*60*1000);
 
  </script>
+ <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
+ <script>
+const firebaseConfig = {
+  apiKey: "AIzaSyBYIkmv7TG77TK8F1MhEeRNeNFVDeAcXdY",
+  authDomain: "meteostorm-d4b69.firebaseapp.com",
+  databaseURL: "https://meteostorm-d4b69-default-rtdb.firebaseio.com",
+  projectId: "meteostorm-d4b69",
+  storageBucket: "meteostorm-d4b69.firebasestorage.app",
+  messagingSenderId: "843529550524",
+  appId: "1:843529550524:web:46bc91dda27a3f9fcdeeb9"
+};
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const database = firebase.database();
 </body></html>
