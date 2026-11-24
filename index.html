@@ -894,4 +894,22 @@ $('memAdd').onclick=()=>{
 
 applyAll();loadWeather();setInterval(loadWeather,15*60*1000);
 </script>
+ <script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-database-compat.js"></script>
+ <script>
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "meteostorm-d4b69.firebaseapp.com",
+  databaseURL: "https://meteostorm-d4b69-default-rtdb.firebaseio.com",
+  projectId: "meteostorm-d4b69",
+  storageBucket: "meteostorm-d4b69.firebasestorage.app",
+  messagingSenderId: "843529550524",
+  appId: "1:843529550524:web:46bc91dda27a3f9fcdeeb9"
+};
+
+firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+const database = firebase.database();
+ </script>
 </body></html>
